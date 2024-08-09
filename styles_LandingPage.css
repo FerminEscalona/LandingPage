@@ -130,6 +130,9 @@ a{
     border-radius: var(--border-r);
     border:transparent
 }
+.cta-a-form:hover{
+    background-color: var(--lifestyle-c);
+}
 
 /* Imagen al lado derecho del formulario */
 .form-image {
