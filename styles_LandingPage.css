@@ -1,3 +1,90 @@
-.Instrucciones{
-    font-family:'Franklin Gothic Medium';
+:root{
+    --main-c: #ff4326;
+    --lifestyle-c: #E9A084;
+    --border-r: 0.25rem;
+}
+/** Uso general **/
+html *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sniglet", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+/**header**/
+
+.header-landingPage{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7vh;
+}
+
+.wrap-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-lists{
+    position: relative;
+    display: flex;
+}
+.wrap-lists li{
+    list-style: none;
+    margin-left: 1.5rem;
+}
+.wrap-lists li a{
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+    font-size: 1.1em;
+}
+.wrap-lists li a:hover{
+    color: var(--main-c);
+}
+/**main**/
+.main-landingPage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 20vw;
+}
+.main-landingPage{
+    background-image: url("background.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.main-section .span-lifestyle{
+    color: var(--main-c);
+}
+.wrap-cta{
+    padding: 1.5rem 0;
+}
+
+.cta-a{
+    color: #fff;
+    font-size: 1rem;
+    background-color: var(--main-c);
+    padding: 0.5rem;
+    border-radius: var(--border-r);
+}
+.cta-a:hover{
+    background-color: var(--lifestyle-c);
 }
