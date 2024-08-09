@@ -36,7 +36,10 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-
+.logo{
+    width: 150px;
+    height: auto;
+}
 .wrap-lists{
     position: relative;
     display: flex;
@@ -56,20 +59,22 @@ a{
 }
 /**main**/
 .main-landingPage{
-    position: relative;
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
-    padding: 20vw;
-}
-.main-landingPage{
+    padding: 10vw 15vw;
     background-image: url("background.png");
-    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
+}
+.main-section h1{
+    font-size: 3rem;
+}
+.main-section p{
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 .main-section .span-lifestyle{
     color: var(--main-c);
@@ -87,4 +92,64 @@ a{
 }
 .cta-a:hover{
     background-color: var(--lifestyle-c);
+}
+/**resposive**/
+@media (max-width: 1023px){
+    .logo{
+        width: 75px;
+    }
+    .main-landingPage{
+        background-image: url("backgroundTablet.png");
+    }
+    .wrap-header {
+        padding: 10px 20px;
+    }
+    .wrap-lists {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .wrap-lists li {
+        margin-left: 1rem;
+    }
+    .wrap-lists li a {
+        font-size: 0.9rem;
+    }
+    .main-section h1 {
+        font-size: 2rem;
+    }
+    .main-section p {
+        font-size: 1rem;
+    }
+    .cta-a {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 767px){
+    .main-landingPage{
+        background-image: url("backgroundPhone.png");
+    }
+    .wrap-header{
+        justify-content: space-between;
+    }
+    .wrap-lists {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    .wrap-lists li {
+        margin: 0.3rem 0.5rem; 
+    }
+    .wrap-lists li a {
+        font-size: 0.9rem; 
+    }
+    .main-section h1 {
+        font-size: 1.8rem;
+    }
+    .main-section p {
+        font-size: 0.9rem;
+    }
+    .cta-a {
+        font-size: 0.8rem;
+    }
 }
