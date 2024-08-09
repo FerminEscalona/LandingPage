@@ -93,6 +93,49 @@ a{
 .cta-a:hover{
     background-color: var(--lifestyle-c);
 }
+/**Formulario**/
+.form-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5vw;
+}
+
+/* Formulario */
+.form-fieldset {
+    border: 2px solid var(--main-c);
+    border-radius: var(--border-r);
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--border-r);
+    border: 1px solid var(--main-c);
+    font-size: 1rem;
+}
+
+/* Imagen al lado derecho del formulario */
+.form-image {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 2rem;
+}
+
+.form-image img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-r);
+}
+
 /**resposive**/
 @media (max-width: 1023px){
     .logo{
